@@ -85,9 +85,9 @@ int main(void)
     lcdxy(2, 1);
     lcdprint("  ROBOCON 2017  ");
     lcdxy(3, 1);
-    lcdprint("   DODU  DHYEY  ");
+    lcdprint("JASHKUMAR DIYORA");
     lcdxy(4, 1);
-    lcdprint("   FABRICATOR   ");
+    lcdprint("   PROGRAMMER   ");
     return 0;
   }
 }
