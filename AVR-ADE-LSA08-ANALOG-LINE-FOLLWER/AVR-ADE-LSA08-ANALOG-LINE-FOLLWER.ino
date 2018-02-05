@@ -54,10 +54,7 @@ int main(void)
     Serial.print("\n ");
     if ((JPIN & 0b1))
     {
-      while ((JPIN & 0b1))
-      {
-        PORTK = 0x00;
-      }
+     PORTK=0;
     }
 
     if ((ADC >= 440 && ADC <= 600)) //(positionvalue>=30 && positionvalue<=40)
