@@ -4,7 +4,7 @@
  */
 
 
-#define F_CPU 8000000UL
+#define F_CPU 16000000UL
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <util/delay.h>
@@ -79,7 +79,7 @@ void lcddisplaystring(const char *label)
 
 void print1()
 {
-    lcddisplaystring("          ");
+    lcddisplaystring("               ");
     lcdxy(3,9);
     lcddisplaystring(str);
     return 0;
@@ -87,7 +87,7 @@ void print1()
 
 void print2()
 {
-    lcddisplaystring("          ");
+    lcddisplaystring("                ");
     lcdxy(4,9);
     lcddisplaystring(str1);
     return 0;
@@ -120,7 +120,6 @@ void runtime()
 
 int main(void)
 {
-    
     runtime();
     DDRA = 0x00;
     ADCSRA|=1<<ADPS2;
