@@ -8,7 +8,7 @@
 #define STEP1 2
 #define DIR1 5
 
-#define ENABLE2 8
+#define ENABLE2 8 //same enable pin for both stepper
 #define STEP2 3
 #define DIR2 6
 
@@ -278,7 +278,7 @@ void loop()
 
 void home()
 {
-
+ //get parking back home
 }
 
 //
